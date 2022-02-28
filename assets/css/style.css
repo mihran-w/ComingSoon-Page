@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Vazir.ttf") format("embedded-opentype"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.woff2") format("woff2");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url("../images/background/bg-light.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f1f2f6;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.darkMode body {
+  background: url(../images/background/bg-dark.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #57606f;
+  transition: all 0.3s;
+}
+
+body,
+html {
+  font-family: "Vazir" !important;
+}
+
+/* *{
+  overflow: hidden;
+} */
+
+/* Preloader */
+.preloader {
+  background: url("../images/gifs/preloader.gif") no-repeat center;
+  height: 100vh;
+  background-color: #f1f2f3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.darkMode .preloader {
+  background-color: #57606f;
+}
+
+/* Over Write */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 2 !important;
+}
+
+/* Utilities */
+a {
+  text-decoration: none;
+}
+
+.cellphone{
+  direction: ltr;
+  text-align: right;
+}
+
+/* Dark Mode */
+.darkMode-SW #btnSwith {
+  width: 2.5rem !important;
+  height: 1.5rem !important;
+}
+
+
+
+.darkMode-SW .bi-brightness-high {
+  color: #fdcb6e;
+  transition: all 1s;
+}
+
+.darkMode .darkMode-SW .bi-brightness-high {
+  color: #000;
+}
+
+.darkMode-SW .bi-moon-stars {
+  color: #000;
+  transition: all 1s;
+}
+
+.darkMode .darkMode-SW .bi-moon-stars {
+  color: #fdcb6e;
+}
+
+/* iTyped Js */
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Header */
+
+.darkMode .dark-text-white {
+  color: #fff !important;
+  transition: all 0.3s;
+}
+header .countdown div {
+  border: 2px solid #fff;
+  padding: 5px;
+  width: 100px;
+  margin: 10px 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+header .countdown div h3 {
+  line-height: 0;
+}
+
+@media (max-width: 576px) {
+  header .countdown div {
+    padding: 2px;
+    width: 70px;
+    margin: 8px 8px;
+  }
+}
+
+header .btn-primary {
+  z-index: 2;
+}
+
+header .social-links a {
+  padding: 10px;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #57606f;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+header .social-links a:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #fff;
+}
+
+header .social-links a i {
+  font-size: 24px;
+  line-height: 0 !important;
+}
+
+.darkMode header .dark-social-icon a {
+  border: 2px solid #f1f2f6;
+  color: #f1f2f6;
+}
+
+.darkMode header .dark-social-icon a:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #fff;
+}
+
+/* contact */
+.contact hr {
+  height: 0.2rem;
+  width: 4rem;
+  color: #57606f;
+}
+
+.darkMode .contact hr {
+  height: 0.2rem;
+  width: 4rem;
+  color: #ffc107;
+}
+
+.contact .card {
+  padding: 1.5rem;
+  border: none;
+  border-top: 2px solid #ffc107;
+  border-bottom: 2px solid #ffc107;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.contact .card i {
+  background-color: rgba(255, 255, 255, 0.06);
+  font-size: 2rem;
+  border: 2px solid #ffc107;
+  padding: 0.5rem;
+  line-height: 0;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.darkMode .contact .card i {
+  color: #fff;
+}
+
+.contact .card  .corsur-hover:hover i {
+  cursor: pointer;
+  background-color: #ffc107;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.contact iframe{
+  border-radius: 10px;
+}
