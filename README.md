@@ -2,7 +2,7 @@
 Coming Soon Page By HTML - CSS - Bootstrap 5 - Java Script - Jquery - Js Plugins
 
 # features
-CountDown - Dark / Light Mode - Animate / Preloader
+CountDown - Dark / Light Mode - Animate - Preloader - Aouto Type
 
 # Demo (Light Mode)
 ![light Mode (1)](https://user-images.githubusercontent.com/57769117/155998862-ab5511e6-d19d-4e45-bef4-78ec34a0d0e7.png)
